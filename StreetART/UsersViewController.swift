@@ -11,11 +11,14 @@ import Firebase
 
 class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
     @IBOutlet weak var tableview: UITableView!
     
-    var user = [User]()
+   var user = [User]()
     
+    @IBOutlet weak var logOutPressed: UIBarButtonItem!
+    
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -124,8 +127,6 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
     }
     
-    @IBAction func logOutPressed(_ sender: Any) {
-    }
     
 }
 
@@ -152,6 +153,10 @@ extension UIImageView {
         task.resume()
     }
 }
+
+
+
+
 
 
 
