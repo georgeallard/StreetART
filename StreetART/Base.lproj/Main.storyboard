@@ -183,10 +183,16 @@
                                 <color key="barTintColor" red="0.48190882730000001" green="0.47982657039999999" blue="0.45793275410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Users" id="KfW-g2-pu5">
-                                        <barButtonItem key="rightBarButtonItem" title="Sign Out" id="nFZ-Tn-52P">
+                                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="nFZ-Tn-52P">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="Dob-gI-oPN"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Byw-bB-cXk">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="OQ7-Eh-Olp" kind="show" id="Oou-yV-Zm0"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -266,6 +272,81 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQD-HZ-dl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1805.5999999999999" y="89.505247376311857"/>
+        </scene>
+        <!--Upload View Controller-->
+        <scene sceneID="BzC-pl-KfM">
+            <objects>
+                <viewController id="OQ7-Eh-Olp" customClass="UploadViewController" customModule="StreetART" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s8L-ih-M34"/>
+                        <viewControllerLayoutGuide type="bottom" id="AFx-Ka-F9W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sqc-vY-Q1t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPm-2p-3e5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.48190882730000001" green="0.47982657039999999" blue="0.45793275410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Upload Image" id="UR1-cd-oG0">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="jiB-aP-6GH">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <segue destination="tvy-N7-Hao" kind="show" id="cPY-jH-7fR"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wgm-5u-crT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.56948122919999999" green="0.56361028869999996" blue="0.57535216970000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PV9-z9-Dg8">
+                                <rect key="frame" x="16" y="72" width="343" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="yPS-PG-SYI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2GV-to-Oqp">
+                                <rect key="frame" x="120" y="132" width="89" height="30"/>
+                                <state key="normal" title="Select Image"/>
+                                <connections>
+                                    <action selector="selectPressed:" destination="OQ7-Eh-Olp" eventType="touchUpInside" id="ZfD-79-MiA"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah1-Hb-S6b">
+                                <rect key="frame" x="171" y="230" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postPressed:" destination="OQ7-Eh-Olp" eventType="touchUpInside" id="ecr-bI-qNH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RPm-2p-3e5" firstAttribute="leading" secondItem="sqc-vY-Q1t" secondAttribute="leading" id="L0y-yG-rpl"/>
+                            <constraint firstItem="2GV-to-Oqp" firstAttribute="leading" secondItem="PV9-z9-Dg8" secondAttribute="trailing" constant="-239" id="MoX-0t-YHn"/>
+                            <constraint firstItem="PV9-z9-Dg8" firstAttribute="trailing" secondItem="sqc-vY-Q1t" secondAttribute="trailingMargin" id="Y9f-hs-13w"/>
+                            <constraint firstAttribute="trailing" secondItem="RPm-2p-3e5" secondAttribute="trailing" id="Yoe-CU-mTB"/>
+                            <constraint firstItem="RPm-2p-3e5" firstAttribute="top" secondItem="s8L-ih-M34" secondAttribute="bottom" id="bNZ-a6-aDe"/>
+                            <constraint firstItem="PV9-z9-Dg8" firstAttribute="top" secondItem="RPm-2p-3e5" secondAttribute="bottom" constant="8" id="dXg-F2-hFn"/>
+                            <constraint firstItem="2GV-to-Oqp" firstAttribute="top" secondItem="PV9-z9-Dg8" secondAttribute="bottom" constant="-90" id="k26-Z2-96h"/>
+                            <constraint firstItem="PV9-z9-Dg8" firstAttribute="leading" secondItem="sqc-vY-Q1t" secondAttribute="leadingMargin" id="oxM-a9-CSx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="postBtn" destination="ah1-Hb-S6b" id="Pm8-ri-UDz"/>
+                        <outlet property="previewImage" destination="PV9-z9-Dg8" id="csw-JP-EI4"/>
+                        <outlet property="selectBtn" destination="2GV-to-Oqp" id="TPH-zT-Ge5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rC-72-jxH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2560.8000000000002" y="88.605697151424295"/>
         </scene>
     </scenes>
 </document>
