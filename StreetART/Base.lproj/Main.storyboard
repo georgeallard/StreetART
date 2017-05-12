@@ -35,7 +35,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NI-fa-hBm">
-                                <rect key="frame" x="168" y="327" width="38" height="30"/>
+                                <rect key="frame" x="168.5" y="327" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="LoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fu-Fb-p66"/>
@@ -110,20 +110,20 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mE2-sZ-0bn">
-                                <rect key="frame" x="117" y="263" width="140" height="140"/>
+                                <rect key="frame" x="117.5" y="263" width="140" height="141"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="JG0-wi-9pV"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNO-hL-lll">
-                                <rect key="frame" x="139" y="411" width="96" height="30"/>
+                                <rect key="frame" x="139.5" y="412" width="96" height="30"/>
                                 <state key="normal" title="Select Picture"/>
                                 <connections>
                                     <action selector="selectimagePressed:" destination="8Og-iw-WbQ" eventType="touchUpInside" id="GPT-L2-o0q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV1-sj-aGx">
-                                <rect key="frame" x="171" y="617" width="32" height="30"/>
+                                <rect key="frame" x="171.5" y="617" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextPressed:" destination="8Og-iw-WbQ" eventType="touchUpInside" id="KVb-bi-T4v"/>
@@ -178,11 +178,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLn-Sk-Qf4">
+                            <navigationBar contentMode="scaleToFill" restorationIdentifier="users" translatesAutoresizingMaskIntoConstraints="NO" id="oLn-Sk-Qf4">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <color key="barTintColor" red="0.48190882730000001" green="0.47982657039999999" blue="0.45793275410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <navigationItem title="Title" id="KfW-g2-pu5">
+                                    <navigationItem title="Users" id="KfW-g2-pu5">
                                         <barButtonItem key="rightBarButtonItem" title="Sign Out" id="nFZ-Tn-52P">
                                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <connections>
@@ -205,33 +205,40 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qgk-yM-xst" id="iq0-rx-wW7">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TIs-Ru-2W3">
-                                                    <rect key="frame" x="8" y="0.0" width="51" height="51"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="51" id="hqh-28-TI8"/>
-                                                        <constraint firstAttribute="height" constant="51" id="uuX-8P-KJ3"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOu-1w-Ds7">
-                                                    <rect key="frame" x="67" y="19" width="77" height="21"/>
+                                                    <rect key="frame" x="100" y="20" width="77" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TIs-Ru-2W3">
+                                                    <rect key="frame" x="8" y="5" width="51" height="51"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="51" id="KQY-G8-Pnd"/>
+                                                        <constraint firstAttribute="width" constant="51" id="d5c-KJ-NNu"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                                                            <real key="value" value="25.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="TIs-Ru-2W3" firstAttribute="leading" secondItem="iq0-rx-wW7" secondAttribute="leading" constant="8" id="1VO-YC-pLV"/>
-                                                <constraint firstItem="DOu-1w-Ds7" firstAttribute="leading" secondItem="TIs-Ru-2W3" secondAttribute="trailing" constant="8" id="3y5-Z9-fqA"/>
-                                                <constraint firstItem="DOu-1w-Ds7" firstAttribute="centerY" secondItem="iq0-rx-wW7" secondAttribute="centerY" id="CpD-f9-Arx"/>
-                                                <constraint firstItem="TIs-Ru-2W3" firstAttribute="centerY" secondItem="iq0-rx-wW7" secondAttribute="centerY" id="DbR-Ps-red"/>
+                                                <constraint firstItem="TIs-Ru-2W3" firstAttribute="centerY" secondItem="DOu-1w-Ds7" secondAttribute="centerY" id="FFA-gV-gkO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DOu-1w-Ds7" secondAttribute="trailing" constant="190" id="QDe-sg-iCb"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DOu-1w-Ds7" secondAttribute="bottom" constant="11" id="faS-rb-YQ5"/>
+                                                <constraint firstItem="DOu-1w-Ds7" firstAttribute="top" secondItem="iq0-rx-wW7" secondAttribute="topMargin" constant="12" id="oBt-S3-TPl"/>
+                                                <constraint firstItem="DOu-1w-Ds7" firstAttribute="leading" secondItem="TIs-Ru-2W3" secondAttribute="trailing" constant="41" id="rHk-uI-x4j"/>
+                                                <constraint firstItem="TIs-Ru-2W3" firstAttribute="leading" secondItem="iq0-rx-wW7" secondAttribute="leading" constant="8" id="xXu-nW-BOL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="DOu-1w-Ds7" id="fyT-Wx-brk"/>
-                                            <outlet property="userImage" destination="DbR-Ps-red" id="Xao-lj-UoS"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
