@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8282C371ECA325A00D0DCB7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8282C361ECA325A00D0DCB7 /* ProfileViewController.swift */; };
 		C84103E71EC0925D00138044 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C84103E61EC0925D00138044 /* GoogleService-Info.plist */; };
 		C84103E91EC0A51500138044 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84103E81EC0A51500138044 /* UserCell.swift */; };
 		C84103EB1EC0A63300138044 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84103EA1EC0A63300138044 /* UsersViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		0F0355D0F90A583574C8BBF6 /* Pods_StreetART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreetART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8282C361ECA325A00D0DCB7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C84103E61EC0925D00138044 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C84103E81EC0A51500138044 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		C84103EA1EC0A63300138044 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				C8534F291EC5F008001C024A /* UploadViewController.swift */,
 				C854B5D81EC60389009DB1F1 /* FeedViewController.swift */,
 				C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */,
+				C8282C361ECA325A00D0DCB7 /* ProfileViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				C88E9FDF1EC0827F00799228 /* LoginViewController.swift in Sources */,
 				C84103F01EC0ACA500138044 /* User.swift in Sources */,
 				C84103EB1EC0A63300138044 /* UsersViewController.swift in Sources */,
+				C8282C371ECA325A00D0DCB7 /* ProfileViewController.swift in Sources */,
 				C8D260821EBFD06D0091851A /* SignUpViewController.swift in Sources */,
 				C8A40E3E1EC9D6960004242B /* MapPinViewController.swift in Sources */,
 				C854B5D71EC60326009DB1F1 /* Post.swift in Sources */,
