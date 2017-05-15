@@ -104,16 +104,42 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="et1-b7-fBH" firstAttribute="bottom" secondItem="g0r-e8-rDy" secondAttribute="top" id="0tQ-or-EaW"/>
-                            <constraint firstItem="et1-b7-fBH" firstAttribute="leading" secondItem="hcZ-wG-Xcc" secondAttribute="leading" id="MZz-lL-2hr"/>
-                            <constraint firstAttribute="trailing" secondItem="et1-b7-fBH" secondAttribute="trailing" id="gQD-bk-8YH"/>
-                            <constraint firstItem="et1-b7-fBH" firstAttribute="top" secondItem="hcZ-wG-Xcc" secondAttribute="top" id="xRi-6s-Jq5"/>
+                            <constraint firstAttribute="bottom" secondItem="et1-b7-fBH" secondAttribute="bottom" id="J7L-Tw-Dlx"/>
+                            <constraint firstItem="et1-b7-fBH" firstAttribute="top" secondItem="hcZ-wG-Xcc" secondAttribute="top" id="Lm5-mm-7bU"/>
+                            <constraint firstItem="et1-b7-fBH" firstAttribute="leading" secondItem="hcZ-wG-Xcc" secondAttribute="leading" id="YhC-Se-fV6"/>
+                            <constraint firstAttribute="trailing" secondItem="et1-b7-fBH" secondAttribute="trailing" id="rYM-kz-hvg"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-marker" id="Tye-rU-SP5">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aN-v8-23B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="324" y="820.83958020989508"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BAe-V7-nkv">
+            <objects>
+                <viewController id="m5C-gW-DZJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JYn-OV-tZW"/>
+                        <viewControllerLayoutGuide type="bottom" id="l2n-lI-xPy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hoa-Hq-J0w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-edit" id="CKv-B2-yUD">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oAe-gj-Q2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1258" y="821"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="jFu-eW-cBR">
@@ -208,7 +234,7 @@
             </objects>
             <point key="canvasLocation" x="1071.2" y="88.605697151424295"/>
         </scene>
-        <!--Community-->
+        <!--Users View Controller-->
         <scene sceneID="5OT-WP-aB3">
             <objects>
                 <viewController storyboardIdentifier="UserVC" id="tvy-N7-Hao" customClass="UsersViewController" customModule="StreetART" customModuleProvider="target" sceneMemberID="viewController">
@@ -222,7 +248,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" restorationIdentifier="users" translatesAutoresizingMaskIntoConstraints="NO" id="oLn-Sk-Qf4">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" red="0.48190882730000001" green="0.47982657039999999" blue="0.45793275410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.83912390470504761" green="0.83926850557327271" blue="0.83911478519439697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Users" id="KfW-g2-pu5">
                                         <barButtonItem key="leftBarButtonItem" title="Sign Out" id="nFZ-Tn-52P">
@@ -251,7 +277,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Unz-1w-Ov6">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.48190882730000001" green="0.47982657039999999" blue="0.45793275410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.85480856895446777" green="0.85495573282241821" blue="0.85479927062988281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MOf-5p-Xyx">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
@@ -265,7 +291,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOu-1w-Ds7">
-                                                    <rect key="frame" x="100" y="20" width="77" height="20"/>
+                                                    <rect key="frame" x="100" y="20" width="212" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -286,7 +312,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="TIs-Ru-2W3" firstAttribute="centerY" secondItem="DOu-1w-Ds7" secondAttribute="centerY" id="FFA-gV-gkO"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="DOu-1w-Ds7" secondAttribute="trailing" constant="190" id="QDe-sg-iCb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="DOu-1w-Ds7" secondAttribute="trailing" constant="55" id="QDe-sg-iCb"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="DOu-1w-Ds7" secondAttribute="bottom" constant="11" id="faS-rb-YQ5"/>
                                                 <constraint firstItem="DOu-1w-Ds7" firstAttribute="top" secondItem="iq0-rx-wW7" secondAttribute="topMargin" constant="12" id="oBt-S3-TPl"/>
                                                 <constraint firstItem="DOu-1w-Ds7" firstAttribute="leading" secondItem="TIs-Ru-2W3" secondAttribute="trailing" constant="41" id="rHk-uI-x4j"/>
@@ -314,7 +340,9 @@
                             <constraint firstAttribute="trailing" secondItem="oLn-Sk-Qf4" secondAttribute="trailing" id="xng-sn-457"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Community" id="6I5-Ur-0V4"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-conference" id="6I5-Ur-0V4">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="logOutPressed" destination="nFZ-Tn-52P" id="vWg-Ra-Ke5"/>
                         <outlet property="tableview" destination="MOf-5p-Xyx" id="Qnd-fW-zpp"/>
@@ -324,7 +352,7 @@
             </objects>
             <point key="canvasLocation" x="2744.8000000000002" y="89.505247376311857"/>
         </scene>
-        <!--Upload-->
+        <!--Upload View Controller-->
         <scene sceneID="BzC-pl-KfM">
             <objects>
                 <viewController id="OQ7-Eh-Olp" customClass="UploadViewController" customModule="StreetART" customModuleProvider="target" sceneMemberID="viewController">
@@ -338,7 +366,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RPm-2p-3e5">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" red="0.48190882730000001" green="0.47982657039999999" blue="0.45793275410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.83912390470504761" green="0.83926850557327271" blue="0.83911478519439697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="Upload Image" id="UR1-cd-oG0">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="jiB-aP-6GH">
@@ -352,7 +380,7 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wgm-5u-crT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <color key="backgroundColor" red="0.56948122919999999" green="0.56361028869999996" blue="0.57535216970000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.8508874773979187" green="0.85103398561477661" blue="0.85087817907333374" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PV9-z9-Dg8">
                                 <rect key="frame" x="16" y="72" width="343" height="343"/>
@@ -395,7 +423,9 @@
                             <constraint firstItem="PV9-z9-Dg8" firstAttribute="leading" secondItem="sqc-vY-Q1t" secondAttribute="leadingMargin" id="pji-g0-d3I"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Upload" id="6yi-Si-1rz"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-plus" id="6yi-Si-1rz">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="postBtn" destination="ah1-Hb-S6b" id="Pm8-ri-UDz"/>
                         <outlet property="previewImage" destination="PV9-z9-Dg8" id="csw-JP-EI4"/>
@@ -406,7 +436,7 @@
             </objects>
             <point key="canvasLocation" x="3500" y="80.50974512743629"/>
         </scene>
-        <!--Feed-->
+        <!--Feed View Controller-->
         <scene sceneID="5c4-EP-Qfv">
             <objects>
                 <viewController id="mTV-sE-dzV" customClass="FeedViewController" customModule="StreetART" customModuleProvider="target" sceneMemberID="viewController">
@@ -423,7 +453,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="tof-t3-Rv5"/>
                                 </constraints>
-                                <color key="barTintColor" red="0.48190882730000001" green="0.47982657039999999" blue="0.45793275410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.85480856895446777" green="0.85495573282241821" blue="0.85479927062988281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem title="StreetAR" id="nR7-Fz-XpX">
                                         <barButtonItem key="leftBarButtonItem" title="Users" id="Sc2-Vv-EuU">
@@ -435,10 +465,9 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NAP-BM-3G1">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAP-BM-3G1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.56948122919999999" green="0.56361028869999996" blue="0.57535216970000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.85480856895446777" green="0.85495573282241821" blue="0.85479927062988281" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GPv-3V-g6i">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
@@ -529,14 +558,20 @@
                         <constraints>
                             <constraint firstItem="GPv-3V-g6i" firstAttribute="leading" secondItem="XaY-oo-iXR" secondAttribute="leading" id="3bl-uE-prY"/>
                             <constraint firstItem="tbk-sT-Ue6" firstAttribute="leading" secondItem="XaY-oo-iXR" secondAttribute="leading" id="5P1-fl-wGq"/>
+                            <constraint firstItem="NAP-BM-3G1" firstAttribute="leading" secondItem="tbk-sT-Ue6" secondAttribute="leading" id="6de-hL-9d2"/>
+                            <constraint firstItem="NAP-BM-3G1" firstAttribute="top" secondItem="XaY-oo-iXR" secondAttribute="top" id="6xQ-KZ-ofn"/>
                             <constraint firstItem="gdT-X6-5lW" firstAttribute="top" secondItem="GPv-3V-g6i" secondAttribute="bottom" id="Bek-I8-Fe9"/>
                             <constraint firstAttribute="trailing" secondItem="tbk-sT-Ue6" secondAttribute="trailing" id="CkC-II-vb0"/>
+                            <constraint firstItem="NAP-BM-3G1" firstAttribute="trailing" secondItem="tbk-sT-Ue6" secondAttribute="trailing" id="Fs8-pg-7fO"/>
                             <constraint firstAttribute="trailing" secondItem="GPv-3V-g6i" secondAttribute="trailing" id="NT9-vs-WpM"/>
+                            <constraint firstItem="NAP-BM-3G1" firstAttribute="bottom" secondItem="tbk-sT-Ue6" secondAttribute="top" id="gx3-y0-76V"/>
                             <constraint firstItem="tbk-sT-Ue6" firstAttribute="top" secondItem="w3F-3M-NKi" secondAttribute="bottom" id="jXL-aM-rVd"/>
                             <constraint firstItem="GPv-3V-g6i" firstAttribute="top" secondItem="tbk-sT-Ue6" secondAttribute="bottom" id="sEC-4w-KmV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Feed" id="h2B-xp-HBY"/>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-menu" id="h2B-xp-HBY">
+                        <inset key="imageInsets" minX="0.0" minY="7" maxX="0.0" maxY="-7"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="collectionView" destination="GPv-3V-g6i" id="d6b-d5-g1V"/>
                     </connections>
@@ -558,6 +593,8 @@
                         <segue destination="tvy-N7-Hao" kind="relationship" relationship="viewControllers" id="52q-iH-Gsf"/>
                         <segue destination="OQ7-Eh-Olp" kind="relationship" relationship="viewControllers" id="EfY-jt-BYj"/>
                         <segue destination="mTV-sE-dzV" kind="relationship" relationship="viewControllers" id="wy9-c1-xD1"/>
+                        <segue destination="9Ll-ss-PpM" kind="relationship" relationship="viewControllers" id="e3H-TC-AEp"/>
+                        <segue destination="m5C-gW-DZJ" kind="relationship" relationship="viewControllers" id="BMB-vq-E6s"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwz-22-0HM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -568,10 +605,15 @@
     <resources>
         <image name="ChooseButton" width="228" height="79"/>
         <image name="StreetAR Logo" width="291" height="121"/>
+        <image name="icons8-conference" width="25" height="25"/>
+        <image name="icons8-edit" width="25" height="25"/>
+        <image name="icons8-marker" width="25" height="25"/>
+        <image name="icons8-menu" width="25" height="25"/>
+        <image name="icons8-plus" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cPY-jH-7fR"/>
-        <segue reference="Oou-yV-Zm0"/>
+        <segue reference="A5u-jd-ct3"/>
         <segue reference="n2O-HI-gFy"/>
+        <segue reference="Oou-yV-Zm0"/>
     </inferredMetricsTieBreakers>
 </document>
