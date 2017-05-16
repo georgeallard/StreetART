@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        UINavigationBar.appearance().barTintColor = UIColor.gray
+       // UINavigationBar.appearance().barTintColor = UIColor.gray
         
      
         

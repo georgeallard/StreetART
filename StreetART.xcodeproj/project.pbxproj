@@ -16,6 +16,7 @@
 		C854B5D71EC60326009DB1F1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854B5D61EC60326009DB1F1 /* Post.swift */; };
 		C854B5D91EC60389009DB1F1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854B5D81EC60389009DB1F1 /* FeedViewController.swift */; };
 		C881B4951ECB14AE00877E9C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881B4941ECB14AE00877E9C /* ProfileViewController.swift */; };
+		C881B4971ECB39FC00877E9C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881B4961ECB39FC00877E9C /* EditProfileViewController.swift */; };
 		C88E9FDF1EC0827F00799228 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88E9FDE1EC0827F00799228 /* LoginViewController.swift */; };
 		C8A40E3E1EC9D6960004242B /* MapPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */; };
 		C8D260821EBFD06D0091851A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D260811EBFD06D0091851A /* SignUpViewController.swift */; };
@@ -37,6 +38,7 @@
 		C854B5D61EC60326009DB1F1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C854B5D81EC60389009DB1F1 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		C881B4941ECB14AE00877E9C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C881B4961ECB39FC00877E9C /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		C88E9FDE1EC0827F00799228 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPinViewController.swift; sourceTree = "<group>"; };
 		C8D260811EBFD06D0091851A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				C881B4941ECB14AE00877E9C /* ProfileViewController.swift */,
+				C881B4961ECB39FC00877E9C /* EditProfileViewController.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C881B4971ECB39FC00877E9C /* EditProfileViewController.swift in Sources */,
 				C84103E91EC0A51500138044 /* UserCell.swift in Sources */,
 				C8534F2A1EC5F008001C024A /* UploadViewController.swift in Sources */,
 				C854B5D91EC60389009DB1F1 /* FeedViewController.swift in Sources */,

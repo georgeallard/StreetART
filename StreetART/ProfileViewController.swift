@@ -15,14 +15,11 @@ class ProfileViewController: UIViewController {
 
     
     @IBOutlet weak var name: UILabel!
-    
     @IBOutlet weak var about: UITextField!
-    
     @IBOutlet weak var profilePicture: UIImageView!
     
     
     var dataBaseRef: FIRDatabaseReference!
-    
     var storageRef: FIRStorage!
     
     
