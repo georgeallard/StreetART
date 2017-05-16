@@ -51,6 +51,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().barTintColor = UIColor.gray
         
+     
+        
         
         // Override point for customization after application launch.
         FIRApp.configure()

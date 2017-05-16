@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8282C371ECA325A00D0DCB7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8282C361ECA325A00D0DCB7 /* ProfileViewController.swift */; };
 		C84103E71EC0925D00138044 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C84103E61EC0925D00138044 /* GoogleService-Info.plist */; };
 		C84103E91EC0A51500138044 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84103E81EC0A51500138044 /* UserCell.swift */; };
 		C84103EB1EC0A63300138044 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84103EA1EC0A63300138044 /* UsersViewController.swift */; };
@@ -16,6 +15,7 @@
 		C854B5D51EC60171009DB1F1 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854B5D41EC60171009DB1F1 /* PostCell.swift */; };
 		C854B5D71EC60326009DB1F1 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854B5D61EC60326009DB1F1 /* Post.swift */; };
 		C854B5D91EC60389009DB1F1 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C854B5D81EC60389009DB1F1 /* FeedViewController.swift */; };
+		C881B4951ECB14AE00877E9C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881B4941ECB14AE00877E9C /* ProfileViewController.swift */; };
 		C88E9FDF1EC0827F00799228 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88E9FDE1EC0827F00799228 /* LoginViewController.swift */; };
 		C8A40E3E1EC9D6960004242B /* MapPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */; };
 		C8D260821EBFD06D0091851A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D260811EBFD06D0091851A /* SignUpViewController.swift */; };
@@ -28,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		0F0355D0F90A583574C8BBF6 /* Pods_StreetART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreetART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C8282C361ECA325A00D0DCB7 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C84103E61EC0925D00138044 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C84103E81EC0A51500138044 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		C84103EA1EC0A63300138044 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		C854B5D41EC60171009DB1F1 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		C854B5D61EC60326009DB1F1 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C854B5D81EC60389009DB1F1 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		C881B4941ECB14AE00877E9C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C88E9FDE1EC0827F00799228 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPinViewController.swift; sourceTree = "<group>"; };
 		C8D260811EBFD06D0091851A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -79,18 +79,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C84103EC1EC0AC0F00138044 /* View Controllers */ = {
+		C84103EC1EC0AC0F00138044 /* Map Tag */ = {
 			isa = PBXGroup;
 			children = (
-				C84103EA1EC0A63300138044 /* UsersViewController.swift */,
-				C8D260811EBFD06D0091851A /* SignUpViewController.swift */,
-				C88E9FDE1EC0827F00799228 /* LoginViewController.swift */,
-				C8534F291EC5F008001C024A /* UploadViewController.swift */,
-				C854B5D81EC60389009DB1F1 /* FeedViewController.swift */,
 				C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */,
-				C8282C361ECA325A00D0DCB7 /* ProfileViewController.swift */,
 			);
-			name = "View Controllers";
+			name = "Map Tag";
 			sourceTree = "<group>";
 		};
 		C84103ED1EC0AC4200138044 /* Custom Cell */ = {
@@ -109,6 +103,26 @@
 				C854B5D61EC60326009DB1F1 /* Post.swift */,
 			);
 			name = Objects;
+			sourceTree = "<group>";
+		};
+		C881B4921ECB0FF000877E9C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C881B4941ECB14AE00877E9C /* ProfileViewController.swift */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		C881B4931ECB101000877E9C /* Sign Up / Photo */ = {
+			isa = PBXGroup;
+			children = (
+				C84103EA1EC0A63300138044 /* UsersViewController.swift */,
+				C8D260811EBFD06D0091851A /* SignUpViewController.swift */,
+				C88E9FDE1EC0827F00799228 /* LoginViewController.swift */,
+				C8534F291EC5F008001C024A /* UploadViewController.swift */,
+				C854B5D81EC60389009DB1F1 /* FeedViewController.swift */,
+			);
+			name = "Sign Up / Photo";
 			sourceTree = "<group>";
 		};
 		C8EE0B5F1EB8AAF000E7575B = {
@@ -132,9 +146,11 @@
 		C8EE0B6A1EB8AAF000E7575B /* StreetART */ = {
 			isa = PBXGroup;
 			children = (
+				C881B4931ECB101000877E9C /* Sign Up / Photo */,
+				C881B4921ECB0FF000877E9C /* Profile */,
 				C84103EE1EC0AC6900138044 /* Objects */,
 				C84103ED1EC0AC4200138044 /* Custom Cell */,
-				C84103EC1EC0AC0F00138044 /* View Controllers */,
+				C84103EC1EC0AC0F00138044 /* Map Tag */,
 				C8EE0B6B1EB8AAF000E7575B /* AppDelegate.swift */,
 				C8EE0B6F1EB8AAF000E7575B /* Main.storyboard */,
 				C8EE0B741EB8AAF000E7575B /* LaunchScreen.storyboard */,
@@ -276,7 +292,7 @@
 				C88E9FDF1EC0827F00799228 /* LoginViewController.swift in Sources */,
 				C84103F01EC0ACA500138044 /* User.swift in Sources */,
 				C84103EB1EC0A63300138044 /* UsersViewController.swift in Sources */,
-				C8282C371ECA325A00D0DCB7 /* ProfileViewController.swift in Sources */,
+				C881B4951ECB14AE00877E9C /* ProfileViewController.swift in Sources */,
 				C8D260821EBFD06D0091851A /* SignUpViewController.swift in Sources */,
 				C8A40E3E1EC9D6960004242B /* MapPinViewController.swift in Sources */,
 				C854B5D71EC60326009DB1F1 /* Post.swift in Sources */,
