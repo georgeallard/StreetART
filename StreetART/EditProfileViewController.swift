@@ -12,7 +12,7 @@ import SDWebImage
 
 
 
-class EditProfileViewController: UIViewController {
+class EditProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     @IBOutlet weak var profilePicture: UIImageView!
@@ -31,6 +31,50 @@ class EditProfileViewController: UIViewController {
         
         loadProfileData()
     }
+    
+    
+    @IBAction func saveProfile(_ sender: Any) {
+        
+        updateUsersProfile()
+        
+        
+    }
+    
+    func updateUsersProfile(){
+        
+        
+        
+    }
+    
+    @IBAction func getPhoto(_ sender: Any) {
+        
+        let picker = UIImagePickerController()
+        
+        picker.delegate = self
+        picker.allowsEditing = false
+        picker.sourceType = .photoLibrary
+        picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        present(picker, animated: true, completion: nil)
+        
+        
+    
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        
+        var chosenImage = UIImage()
+        chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        profilePicture.image = chosenImage
+        dismiss(animated: true, completion: nil)
+        
+        
+        
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     func loadProfileData(){
         
