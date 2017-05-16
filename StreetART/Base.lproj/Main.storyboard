@@ -196,14 +196,8 @@
                                     <constraint firstAttribute="height" constant="20" id="v35-BB-EGp"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cxH-7g-BAb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="gtY-AG-juv"/>
-                                </constraints>
-                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDf-nG-8oy">
-                                <rect key="frame" x="0.0" y="190" width="375" height="428"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StreetAR Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Thr-wm-IvD">
                                         <rect key="frame" x="9" y="8" width="100" height="100"/>
@@ -232,7 +226,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="About" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CXO-h2-ZGW">
-                                        <rect key="frame" x="9" y="128" width="358" height="30"/>
+                                        <rect key="frame" x="9" y="127.5" width="358" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="g2H-Lf-9Ia"/>
                                         </constraints>
@@ -244,8 +238,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Thr-wm-IvD" firstAttribute="leading" secondItem="pDf-nG-8oy" secondAttribute="leading" constant="9" id="4zN-KJ-Sto"/>
-                                    <constraint firstAttribute="bottom" secondItem="8Qp-p9-vLT" secondAttribute="bottom" constant="390" id="6gR-3U-Cgm"/>
+                                    <constraint firstAttribute="bottom" secondItem="8Qp-p9-vLT" secondAttribute="bottom" constant="516" id="6gR-3U-Cgm"/>
                                     <constraint firstItem="Jq3-qF-R3F" firstAttribute="top" secondItem="Thr-wm-IvD" secondAttribute="bottom" constant="-8" id="8Jw-45-7SX"/>
+                                    <constraint firstItem="Thr-wm-IvD" firstAttribute="top" secondItem="8Qp-p9-vLT" secondAttribute="top" id="B0O-by-QBN"/>
                                     <constraint firstItem="CXO-h2-ZGW" firstAttribute="leading" secondItem="Thr-wm-IvD" secondAttribute="leading" id="CO6-JF-RSZ"/>
                                     <constraint firstItem="8Qp-p9-vLT" firstAttribute="top" secondItem="pDf-nG-8oy" secondAttribute="top" constant="8" id="DXZ-7q-Vp0"/>
                                     <constraint firstItem="CXO-h2-ZGW" firstAttribute="top" secondItem="Jq3-qF-R3F" secondAttribute="bottom" constant="7.5" id="JNl-1B-wZP"/>
@@ -259,18 +254,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KME-MS-Rjc" firstAttribute="top" secondItem="Hoa-Hq-J0w" secondAttribute="top" id="0CW-z4-4TS"/>
-                            <constraint firstItem="Thr-wm-IvD" firstAttribute="top" secondItem="cxH-7g-BAb" secondAttribute="bottom" constant="6" id="5SJ-gf-qoI"/>
                             <constraint firstItem="KME-MS-Rjc" firstAttribute="leading" secondItem="Hoa-Hq-J0w" secondAttribute="leading" id="K9x-Ca-ZrJ"/>
-                            <constraint firstItem="pDf-nG-8oy" firstAttribute="top" secondItem="fKs-18-JmI" secondAttribute="bottom" constant="126" id="Nzz-e3-o0h"/>
+                            <constraint firstItem="pDf-nG-8oy" firstAttribute="top" secondItem="fKs-18-JmI" secondAttribute="bottom" id="Nzz-e3-o0h"/>
                             <constraint firstAttribute="trailing" secondItem="pDf-nG-8oy" secondAttribute="trailing" id="OEZ-mn-6n9"/>
                             <constraint firstAttribute="trailing" secondItem="fKs-18-JmI" secondAttribute="trailing" id="XGs-5F-hLi"/>
                             <constraint firstItem="fKs-18-JmI" firstAttribute="top" secondItem="JYn-OV-tZW" secondAttribute="bottom" id="aWO-qv-frZ"/>
                             <constraint firstItem="fKs-18-JmI" firstAttribute="leading" secondItem="Hoa-Hq-J0w" secondAttribute="leading" id="dI9-yq-tXV"/>
                             <constraint firstItem="pDf-nG-8oy" firstAttribute="leading" secondItem="Hoa-Hq-J0w" secondAttribute="leading" id="eAZ-db-fpb"/>
                             <constraint firstAttribute="trailing" secondItem="KME-MS-Rjc" secondAttribute="trailing" id="fAi-Nu-3vz"/>
-                            <constraint firstAttribute="trailing" secondItem="cxH-7g-BAb" secondAttribute="trailing" id="lNN-al-tJG"/>
-                            <constraint firstItem="cxH-7g-BAb" firstAttribute="top" secondItem="fKs-18-JmI" secondAttribute="bottom" id="p7g-Zu-Waz"/>
-                            <constraint firstItem="cxH-7g-BAb" firstAttribute="leading" secondItem="Hoa-Hq-J0w" secondAttribute="leading" id="pD7-OW-2LT"/>
                             <constraint firstItem="l2n-lI-xPy" firstAttribute="top" secondItem="pDf-nG-8oy" secondAttribute="bottom" id="ybd-HI-hBD"/>
                         </constraints>
                     </view>
@@ -279,9 +270,9 @@
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="about" destination="pDf-nG-8oy" id="tvX-PS-YWl"/>
-                        <outlet property="name" destination="pDf-nG-8oy" id="Sfk-mE-xit"/>
-                        <outlet property="profilePicture" destination="pDf-nG-8oy" id="RwL-DU-PeF"/>
+                        <outlet property="about" destination="CXO-h2-ZGW" id="uIF-em-Kxn"/>
+                        <outlet property="name" destination="Jq3-qF-R3F" id="CIs-EU-wVj"/>
+                        <outlet property="profilePicture" destination="Thr-wm-IvD" id="Gky-aI-b7d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oAe-gj-Q2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -722,7 +713,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="1600" height="1200"/>
         <image name="ChooseButton" width="228" height="79"/>
         <image name="StreetAR Logo" width="291" height="121"/>
         <image name="icons8-conference" width="25" height="25"/>

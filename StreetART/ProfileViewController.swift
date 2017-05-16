@@ -12,11 +12,14 @@ import Firebase
 
 class ProfileViewController: UIViewController {
     
-    @IBOutlet weak var profilePicture: UIView!
+
     
-    @IBOutlet weak var name: UIView!
+    @IBOutlet weak var name: UILabel!
     
-    @IBOutlet weak var about: UIView!
+    @IBOutlet weak var about: UITextField!
+    
+    @IBOutlet weak var profilePicture: UIImageView!
+    
     
     var dataBaseRef: FIRDatabaseReference!
     
@@ -49,7 +52,7 @@ class ProfileViewController: UIViewController {
                         }
                         
                         DispatchQueue.main.async {
-                            self.profilePicture.image = UIImage(data: data)
+                            self.profilePicture.image = UIImage(data: data!)
                             
                         }
                     }) . resume()
@@ -57,15 +60,17 @@ class ProfileViewController: UIViewController {
                 
                 self.name.text = fullname
                 
-            }) { (error) 
+            }) { (error) in
+                print(error.localizedDescription)
+                return
             
             }
         }
     }
 
-            
 
 
 
 
+}
     
