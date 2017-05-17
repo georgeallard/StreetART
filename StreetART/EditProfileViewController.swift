@@ -25,11 +25,13 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
 
          dataBaseRef = FIRDatabase.database().reference()
          storageRef = FIRStorage.storage().reference()
         
         loadProfileData()
+        
     }
     
     
@@ -37,12 +39,12 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         
         updateUsersProfile()
         
-        
     }
     
-    func updateUsersProfile(){
-        
-        
+    
+    
+    @IBAction func cancel(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
         
     }
     
@@ -55,11 +57,63 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         picker.sourceType = .photoLibrary
         picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
         present(picker, animated: true, completion: nil)
-        
-        
     
+        
+    }
+
+
+    func updateUsersProfile(){
+        
+        if let userID = FIRAuth.auth()?.currentUser?.uid {
+            
+            let storageItem = storageRef.child("users").child(userID)
+            guard let image = profilePicture.image else { return }
+            
+            if let newImage = UIImagePNGRepresentation(image){
+                storageItem.put(newImage, metadata: nil, completion: { metadata, error in
+                    if error != nil{
+                        print(error!)
+                        return
+                    }
+                    
+                    storageItem.downloadURL(completion: { url, error in
+                        if error != nil{
+                            print(error!)
+                            return
+                        }
+                        
+                        if let profilePicture = url?.absoluteString{
+                            
+                            guard let newFullName = self.fullName.text else {return}
+                            guard let about = self.about.text else {return}
+                            
+                            let newValuesForProfile = [
+                                "urlToImage": profilePicture,
+                                "fullname": newFullName,
+                                "about": about
+                            ]
+                            
+                            self.dataBaseRef.child("users").child(userID).updateChildValues(newValuesForProfile, withCompletionBlock: { error, ref in
+                                
+                                if error != nil{
+                                    print(error!)
+                                    return
+                                }
+                                
+                                print ("Profile Updated")
+                                
+                            })
+                            
+                            
+                        }
+                    })
+                })
+            }
+
+        }
     }
     
+       
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         var chosenImage = UIImage()
@@ -93,8 +147,12 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
                 self.about.text = values?[""] as? String
         
         
-    }
+            })
 
-        )}
+        }
     }
 }
+    
+
+    
+
