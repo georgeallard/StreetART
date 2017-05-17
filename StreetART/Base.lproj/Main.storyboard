@@ -68,8 +68,11 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StreetAR Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6ei-LY-Qhe">
+                                <rect key="frame" x="41" y="65" width="294" height="121"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8NI-fa-hBm">
-                                <rect key="frame" x="169" y="446" width="38" height="30"/>
+                                <rect key="frame" x="170" y="392" width="38" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="TXb-6o-137"/>
                                 </constraints>
@@ -78,11 +81,10 @@
                                 </state>
                                 <connections>
                                     <action selector="LoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Fu-Fb-p66"/>
-                                    <segue destination="VUA-2l-s26" kind="show" id="lGe-er-bIq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okg-Ph-yGf">
-                                <rect key="frame" x="160" y="477" width="55" height="30"/>
+                                <rect key="frame" x="161" y="423" width="55" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="AEw-0U-kh1"/>
                                 </constraints>
@@ -93,26 +95,23 @@
                                     <segue destination="8Og-iw-WbQ" kind="presentation" id="hcM-TO-nHH"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StreetAR Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6ei-LY-Qhe">
-                                <rect key="frame" x="41" y="65" width="294" height="121"/>
-                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="fqp-LG-M40" firstAttribute="trailing" secondItem="MEO-2b-Msr" secondAttribute="trailing" id="4Is-Fq-6eu"/>
                             <constraint firstItem="6ei-LY-Qhe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="25" id="4Qt-QE-WIG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Okg-Ph-yGf" secondAttribute="trailing" constant="144" id="5Dy-DK-T1d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Okg-Ph-yGf" secondAttribute="trailing" constant="143" id="5Dy-DK-T1d"/>
                             <constraint firstItem="Okg-Ph-yGf" firstAttribute="top" secondItem="8NI-fa-hBm" secondAttribute="bottom" constant="1" id="5Po-aE-go2"/>
                             <constraint firstItem="fqp-LG-M40" firstAttribute="top" secondItem="6ei-LY-Qhe" secondAttribute="bottom" constant="75" id="IDo-z6-HxD"/>
                             <constraint firstItem="6ei-LY-Qhe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="Leg-TB-Cc0"/>
-                            <constraint firstItem="Okg-Ph-yGf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="144" id="M57-GP-hBP"/>
+                            <constraint firstItem="Okg-Ph-yGf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="145" id="M57-GP-hBP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6ei-LY-Qhe" secondAttribute="trailing" constant="24" id="Olt-p7-ude"/>
                             <constraint firstItem="MEO-2b-Msr" firstAttribute="top" secondItem="fqp-LG-M40" secondAttribute="bottom" constant="14" id="R88-Ax-1JJ"/>
                             <constraint firstItem="fqp-LG-M40" firstAttribute="leading" secondItem="dEG-TK-dgc" secondAttribute="leading" id="WIQ-vb-h0Q"/>
-                            <constraint firstItem="8NI-fa-hBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bc9-c4-ZAt"/>
+                            <constraint firstItem="8NI-fa-hBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="1.5" id="bc9-c4-ZAt"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dEG-TK-dgc" secondAttribute="bottom" id="jgb-EW-tCQ"/>
                             <constraint firstItem="fqp-LG-M40" firstAttribute="leading" secondItem="MEO-2b-Msr" secondAttribute="leading" id="mNV-ax-FTS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Okg-Ph-yGf" secondAttribute="bottom" constant="160" id="o72-a8-EwQ"/>
-                            <constraint firstItem="8NI-fa-hBm" firstAttribute="top" secondItem="MEO-2b-Msr" secondAttribute="bottom" constant="82" id="ogb-ql-CRe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Okg-Ph-yGf" secondAttribute="bottom" constant="214" id="o72-a8-EwQ"/>
+                            <constraint firstItem="8NI-fa-hBm" firstAttribute="top" secondItem="MEO-2b-Msr" secondAttribute="bottom" constant="28" id="ogb-ql-CRe"/>
                             <constraint firstItem="dEG-TK-dgc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="unT-7a-6bw"/>
                             <constraint firstItem="dEG-TK-dgc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vDo-JZ-HtQ"/>
                             <constraint firstAttribute="trailing" secondItem="dEG-TK-dgc" secondAttribute="trailing" id="wAa-Ee-xbg"/>
@@ -363,11 +362,7 @@
                                                 <segue destination="m5C-gW-DZJ" kind="show" id="Nhk-54-UVl"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="P9y-jo-cJk">
-                                            <connections>
-                                                <action selector="saveProfile:" destination="aM7-ap-xzD" id="A1L-4d-Cgm"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="P9y-jo-cJk"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -595,7 +590,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQD-HZ-dl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2744.8000000000002" y="89.505247376311857"/>
+            <point key="canvasLocation" x="2666" y="161"/>
         </scene>
         <!--Upload View Controller-->
         <scene sceneID="BzC-pl-KfM">
@@ -852,7 +847,6 @@
         <image name="login" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lGe-er-bIq"/>
-        <segue reference="9s4-8t-fwX"/>
+        <segue reference="Nhk-54-UVl"/>
     </inferredMetricsTieBreakers>
 </document>

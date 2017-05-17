@@ -32,6 +32,8 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         ref = FIRDatabase.database().reference()
         userStorage = storage.child("users")
         
+   
+        
     }
 
 
@@ -59,6 +61,8 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
 
     @IBAction func nextPressed(_ sender: Any) {
         
+        
+        
         guard nameField.text != "", emailField.text != "", passwordField.text != "", confirmPwField.text != "" else { return}
 
         
@@ -72,6 +76,8 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
                     if let error = error {
                         print(error.localizedDescription)
                     }
+                    
+                    
                     
                     if let user = user {
                         
