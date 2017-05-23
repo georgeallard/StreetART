@@ -61,7 +61,7 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         cell.nameLabel.text = self.user[indexPath.row].fullName
         cell.userID = self.user[indexPath.row].userID
-      //  cell.userImage.downloadImage(from: self.user[indexPath.row].imagePath!)
+        //cell.userImage.downloadImage(from: self.user[indexPath.row].imagePath!)
         checkFollowing(indexPath: indexPath)
         
         return cell
