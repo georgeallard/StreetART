@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import TextFieldEffects
 
 class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -17,6 +18,8 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     @IBOutlet weak var confirmPwField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nextButton: UIButton!
+   
+    @IBOutlet weak var selectImagePressed: UIButton!
     
     let picker = UIImagePickerController()
     var userStorage: FIRStorageReference!
@@ -24,6 +27,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         
         picker.delegate = self
         
@@ -43,6 +47,16 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
         picker.sourceType = .photoLibrary
         
         present(picker, animated: true, completion: nil)
+        
+        UIView.animate(withDuration: 0.3, animations: {
+            
+            self.selectImagePressed.alpha = 0
+            
+        })
+        
+
+        
+        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -109,7 +123,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
                                     self.ref.child("users").child(user.uid).setValue(userInfo)
                                     
                                     
-                                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserVC")
+                                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeVC")
                                     
                                     self.present(vc, animated: true, completion: nil)
                                     
