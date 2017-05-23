@@ -19,6 +19,7 @@
 		C881B4971ECB39FC00877E9C /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C881B4961ECB39FC00877E9C /* EditProfileViewController.swift */; };
 		C88E9FDF1EC0827F00799228 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88E9FDE1EC0827F00799228 /* LoginViewController.swift */; };
 		C8911BB71ED46658009E9624 /* drawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8911BB61ED46658009E9624 /* drawViewController.swift */; };
+		C8911BBA1ED48DA5009E9624 /* settingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8911BB91ED48DA5009E9624 /* settingsViewController.swift */; };
 		C8A40E3E1EC9D6960004242B /* MapPinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */; };
 		C8D260821EBFD06D0091851A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D260811EBFD06D0091851A /* SignUpViewController.swift */; };
 		C8EE0B6C1EB8AAF000E7575B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EE0B6B1EB8AAF000E7575B /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		C881B4961ECB39FC00877E9C /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		C88E9FDE1EC0827F00799228 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C8911BB61ED46658009E9624 /* drawViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = drawViewController.swift; sourceTree = "<group>"; };
+		C8911BB91ED48DA5009E9624 /* settingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = settingsViewController.swift; sourceTree = "<group>"; };
 		C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPinViewController.swift; sourceTree = "<group>"; };
 		C8D260811EBFD06D0091851A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C8EE0B681EB8AAF000E7575B /* StreetART.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetART.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */,
-				C8911BB81ED4665F009E9624 /* Draw */,
 			);
 			name = "Map Tag";
 			sourceTree = "<group>";
@@ -135,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				C8911BB61ED46658009E9624 /* drawViewController.swift */,
+				C8911BB91ED48DA5009E9624 /* settingsViewController.swift */,
 			);
 			name = Draw;
 			sourceTree = "<group>";
@@ -165,6 +167,7 @@
 				C84103EE1EC0AC6900138044 /* Objects */,
 				C84103ED1EC0AC4200138044 /* Custom Cell */,
 				C84103EC1EC0AC0F00138044 /* Map Tag */,
+				C8911BB81ED4665F009E9624 /* Draw */,
 				C8EE0B6B1EB8AAF000E7575B /* AppDelegate.swift */,
 				C8EE0B6F1EB8AAF000E7575B /* Main.storyboard */,
 				C8EE0B741EB8AAF000E7575B /* LaunchScreen.storyboard */,
@@ -305,6 +308,7 @@
 				C8534F2A1EC5F008001C024A /* UploadViewController.swift in Sources */,
 				C854B5D91EC60389009DB1F1 /* FeedViewController.swift in Sources */,
 				C88E9FDF1EC0827F00799228 /* LoginViewController.swift in Sources */,
+				C8911BBA1ED48DA5009E9624 /* settingsViewController.swift in Sources */,
 				C84103F01EC0ACA500138044 /* User.swift in Sources */,
 				C8911BB71ED46658009E9624 /* drawViewController.swift in Sources */,
 				C84103EB1EC0A63300138044 /* UsersViewController.swift in Sources */,

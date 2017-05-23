@@ -10,6 +10,7 @@ import UIKit
 
 class drawViewController: UIViewController {
 
+    @IBOutlet weak var toolIcon: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
     var lastPoint = CGPoint.zero
@@ -19,12 +20,22 @@ class drawViewController: UIViewController {
     var green:CGFloat = 0.0
     var blue:CGFloat = 0.0
 
+    var tool:UIImageView!
+    var isDrawing = true
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        tool = UIImageView()
+        tool.frame = CGRect(x: self.view.bounds.size.width, y: self.view.bounds.size.height, width: 38, height: 38)
+        tool.image = #imageLiteral(resourceName: "Paintbrush")
+        self.view.addSubview(tool)
+        
+        
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -42,7 +53,7 @@ class drawViewController: UIViewController {
         
         context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
         context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y))
-        
+        tool.center = toPoint
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(5)
@@ -78,6 +89,45 @@ class drawViewController: UIViewController {
 
     }
     
+    
+    @IBAction func setting(_ sender: Any) {
+    }
+    
+    @IBAction func save(_ sender: Any) {
+        
+        if let image = imageView.image {
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            
+        }
+    }
+    
+    @IBAction func erase(_ sender: Any) {
+        
+        
+        if (isDrawing) {
+            (red,green,blue) = (1,1,1)
+            tool.image = #imageLiteral(resourceName: "icons8-erase_filled")
+            toolIcon.setImage(#imageLiteral(resourceName: "Paintbrush"), for: .normal)
+            
+        } else {
+            (red,green,blue) = (0,0,0)
+            tool.image = #imageLiteral(resourceName: "Paintbrush")
+            toolIcon.setImage(#imageLiteral(resourceName: "icons8-erase_filled"), for: .normal)
+        }
+        
+        isDrawing = !isDrawing
+
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
     @IBAction func coloursPicked(_ sender: Any) {
         
         if (sender as AnyObject).tag == 0 {
@@ -88,6 +138,7 @@ class drawViewController: UIViewController {
             (red,green,blue) = (0,0,1)
         } else if (sender as AnyObject).tag == 3 {
             (red,green,blue) = (1,0,1)
+            
         } else if (sender as AnyObject).tag == 4 {
             (red,green,blue) = (1,1,0)
         } else if (sender as AnyObject).tag == 5 {
