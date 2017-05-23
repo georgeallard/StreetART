@@ -13,15 +13,19 @@ class drawViewController: UIViewController {
     @IBOutlet weak var toolIcon: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     
+    
     var lastPoint = CGPoint.zero
     var swiped = false
     
     var red:CGFloat = 0.0
     var green:CGFloat = 0.0
     var blue:CGFloat = 0.0
-
+    var brushSize:CGFloat = 5.0
+    var opacityValue:CGFloat = 1.0
+    
     var tool:UIImageView!
     var isDrawing = true
+    var selectedImage:UIImage!
 
 
     override func viewDidLoad() {
@@ -90,16 +94,30 @@ class drawViewController: UIViewController {
     }
     
     
-    @IBAction func setting(_ sender: Any) {
+    @IBAction func save(_ sender: Any) {
+        let actionSheet = UIAlertController(title: "Pick your option", message: "", preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Pick an image", style: .default, handler: { (_) in
+            
+            let imagePicker = UIImagePickerController()
+            imagePicker.sourceType = .photoLibrary
+            imagePicker.allowsEditing = false
+            imagePicker.delegate = self
+            
+            self.present(imagePicker, animated: true, completion: nil)
+            
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Save your drawing", style: .default, handler: { (_) in
+            if let image = self.imageView.image {
+                UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            }
+        }))
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        
+        present(actionSheet, animated: true, completion: nil)
+        
     }
     
-    @IBAction func save(_ sender: Any) {
-        
-        if let image = imageView.image {
-            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-            
-        }
-    }
     
     @IBAction func erase(_ sender: Any) {
         
@@ -116,45 +134,96 @@ class drawViewController: UIViewController {
         }
         
         isDrawing = !isDrawing
-
-        
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
+
+    @IBAction func setting(_ sender: Any) {
+}
+
+
     @IBAction func coloursPicked(_ sender: Any) {
         
-        if (sender as AnyObject).tag == 0 {
+        
+        if sender.tag == 0 {
             (red,green,blue) = (1,0,0)
-        } else if (sender as AnyObject).tag == 1 {
+        } else if sender.tag == 1 {
             (red,green,blue) = (0,1,0)
-        } else if (sender as AnyObject).tag == 2 {
+        } else if sender.tag == 2 {
             (red,green,blue) = (0,0,1)
-        } else if (sender as AnyObject).tag == 3 {
+        } else if sender.tag == 3 {
             (red,green,blue) = (1,0,1)
-            
-        } else if (sender as AnyObject).tag == 4 {
+        } else if sender.tag == 4 {
             (red,green,blue) = (1,1,0)
-        } else if (sender as AnyObject).tag == 5 {
+        } else if sender.tag == 5 {
             (red,green,blue) = (0,1,1)
-        } else if (sender as AnyObject).tag == 6 {
+        } else if sender.tag == 6 {
             (red,green,blue) = (1,1,1)
-        } else if (sender as AnyObject).tag == 7 {
+        } else if sender.tag == 7 {
             (red,green,blue) = (0,0,0)
         }
-        
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
 
 }
+
+override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+}
+
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    super.prepare(for: segue, sender: sender)
+    
+    let settingsVC = segue.destination as! SettingsVC
+    settingsVC.delegate = self
+    settingsVC.red = red
+    settingsVC.green = green
+    settingsVC.blue = blue
+    settingsVC.brushSize = brushSize
+    settingsVC.opacityValue = opacityValue
+
+        }
+    }
+
+extension drawViewController:UINavigationControllerDelegate,UIImagePickerControllerDelegate, settingsViewControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let imagePicked = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            // We got the user's image
+            self.selectedImage = imagePicked
+            self.imageView.image = selectedImage
+            
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func settingsViewControllerDidFinish(_ settingsViewController: settingsViewController) {
+        self.red = settingsViewController.red
+        self.green = settingsViewController.green
+        self.blue = settingsViewController.blue
+        self.brushSize = settingsViewController.brushSize
+        self.opacityValue = settingsViewController.opacityValue
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

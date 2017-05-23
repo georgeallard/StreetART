@@ -550,6 +550,7 @@
                                         <state key="normal" image="icons8-settings_filled"/>
                                         <connections>
                                             <action selector="setting:" destination="IT4-OS-0xm" eventType="touchUpInside" id="Nqh-vV-nJy"/>
+                                            <segue destination="3pD-80-KMC" kind="presentation" modalTransitionStyle="crossDissolve" id="bW4-lj-dns"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -607,29 +608,48 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Settings" id="wLg-7T-5vT">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="U54-5r-IsI"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="U54-5r-IsI">
+                                            <connections>
+                                                <action selector="dismiss:" destination="3pD-80-KMC" id="dMC-eO-AFF"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BnZ-KW-W7f">
                                 <rect key="frame" x="128" y="328" width="233" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="brushSizeChanged:" destination="3pD-80-KMC" eventType="valueChanged" id="t3L-B1-1vJ"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="kXx-gA-p6E">
                                 <rect key="frame" x="128" y="384" width="233" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="opacityChanged:" destination="3pD-80-KMC" eventType="valueChanged" id="zQT-dr-VL6"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ajE-eQ-hwO">
                                 <rect key="frame" x="128" y="507" width="233" height="31"/>
                                 <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="redSliderChanged:" destination="3pD-80-KMC" eventType="valueChanged" id="CKh-GE-1Oq"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mtH-Ap-BKV">
                                 <rect key="frame" x="128" y="559" width="233" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.0026700184891112304" green="0.94031978288882878" blue="0.004142776792200196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="greenSliderChanged:" destination="3pD-80-KMC" eventType="valueChanged" id="pGy-ln-Iih"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5av-wX-M0S">
                                 <rect key="frame" x="128" y="617" width="233" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="blueSliderChanged:" destination="3pD-80-KMC" eventType="valueChanged" id="jcx-qc-W5r"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brush Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qr1-iY-kHc">
                                 <rect key="frame" x="16" y="328" width="100" height="32"/>
@@ -723,6 +743,17 @@
                             <constraint firstItem="BnZ-KW-W7f" firstAttribute="trailing" secondItem="Zng-zE-0FB" secondAttribute="trailingMargin" id="wvJ-nS-QO9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BrushSizeLabel" destination="Qr1-iY-kHc" id="h9R-zJ-13Q"/>
+                        <outlet property="blueLabel" destination="sHP-WA-0an" id="YBQ-uq-4zY"/>
+                        <outlet property="blueSlider" destination="5av-wX-M0S" id="p2Q-4Q-RDe"/>
+                        <outlet property="greenLabel" destination="OgN-vi-Drj" id="CxK-8e-zC2"/>
+                        <outlet property="greenSlider" destination="mtH-Ap-BKV" id="kZP-6n-Wb3"/>
+                        <outlet property="imageView" destination="Nrl-qB-ZPh" id="VGW-KA-qRh"/>
+                        <outlet property="opacityLabel" destination="BDo-Jh-YnF" id="Nbc-wL-stN"/>
+                        <outlet property="redLabel" destination="xeh-va-GiU" id="5IH-lQ-atm"/>
+                        <outlet property="redSlider" destination="ajE-eQ-hwO" id="OaI-X3-foQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ikX-JN-KTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
