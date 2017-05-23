@@ -559,11 +559,7 @@
                                 <rect key="frame" x="1" y="20" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Draw" id="Kbv-XR-ZK6">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ijc-jb-XMm">
-                                            <connections>
-                                                <segue destination="OQ7-Eh-Olp" kind="show" id="oSJ-96-q4b"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ijc-jb-XMm"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -609,6 +605,7 @@
                                 <items>
                                     <navigationItem title="Settings" id="wLg-7T-5vT">
                                         <barButtonItem key="leftBarButtonItem" title="Dismiss" id="U54-5r-IsI">
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="dismiss:" destination="3pD-80-KMC" id="dMC-eO-AFF"/>
                                             </connections>
@@ -616,7 +613,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BnZ-KW-W7f">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="1" maxValue="75" translatesAutoresizingMaskIntoConstraints="NO" id="BnZ-KW-W7f">
                                 <rect key="frame" x="128" y="328" width="233" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
@@ -1226,7 +1223,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="s40-Nr-dva"/>
-        <segue reference="oSJ-96-q4b"/>
         <segue reference="Nhk-54-UVl"/>
     </inferredMetricsTieBreakers>
 </document>

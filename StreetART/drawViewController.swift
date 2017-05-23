@@ -60,8 +60,8 @@ class drawViewController: UIViewController {
         tool.center = toPoint
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineCap(CGLineCap.round)
-        context?.setLineWidth(5)
-        context?.setStrokeColor(UIColor(red: red, green: green, blue: blue, alpha: 1.0).cgColor)
+        context?.setLineWidth(brushSize)
+        context?.setStrokeColor(UIColor(red: red, green: green, blue: blue, alpha: opacityValue).cgColor)
         
         context?.strokePath()
         

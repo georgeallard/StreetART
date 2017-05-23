@@ -70,11 +70,19 @@ class settingsViewController: UIViewController {
     
     
     @IBAction func brushSizeChanged(_ sender: Any) {
+        let slider = sender as! UISlider
+        brushSize = CGFloat(slider.value)
+        drawPreview(red: red, green: green, blue: blue)
     }
 
     
     
     @IBAction func opacityChanged(_ sender: Any) {
+    
+        let slider = sender as! UISlider
+        opacityValue = CGFloat(slider.value)
+        drawPreview(red: red, green: green, blue: blue)
+
     }
     
     
