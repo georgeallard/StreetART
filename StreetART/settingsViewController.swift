@@ -8,8 +8,9 @@
 
 import UIKit
 
-protocol SettingsVCDelegate:class {
-    func settingsViewControllerDidFinish(_ settingsViewController:settingsViewController)
+protocol settingsViewControllerDelegate:class {
+    func settingsViewControllerDidFinish(_ settingsViewController: settingsViewController)
+
 }
 
 class settingsViewController: UIViewController {
@@ -30,7 +31,7 @@ class settingsViewController: UIViewController {
     var brushSize:CGFloat = 5.0
     var opacityValue:CGFloat = 1.0
     
-    var delegate:SettingsViewControllerDelegate?
+    var delegate:settingsViewControllerDelegate?
     
     
     override func viewDidLoad() {

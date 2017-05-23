@@ -144,21 +144,21 @@ class drawViewController: UIViewController {
     @IBAction func coloursPicked(_ sender: Any) {
         
         
-        if sender.tag == 0 {
+        if (sender as AnyObject).tag == 0 {
             (red,green,blue) = (1,0,0)
-        } else if sender.tag == 1 {
+        } else if (sender as AnyObject).tag == 1 {
             (red,green,blue) = (0,1,0)
-        } else if sender.tag == 2 {
+        } else if (sender as AnyObject).tag == 2 {
             (red,green,blue) = (0,0,1)
-        } else if sender.tag == 3 {
+        } else if (sender as AnyObject).tag == 3 {
             (red,green,blue) = (1,0,1)
-        } else if sender.tag == 4 {
+        } else if (sender as AnyObject).tag == 4 {
             (red,green,blue) = (1,1,0)
-        } else if sender.tag == 5 {
+        } else if (sender as AnyObject).tag == 5 {
             (red,green,blue) = (0,1,1)
-        } else if sender.tag == 6 {
+        } else if (sender as AnyObject).tag == 6 {
             (red,green,blue) = (1,1,1)
-        } else if sender.tag == 7 {
+        } else if (sender as AnyObject).tag == 7 {
             (red,green,blue) = (0,0,0)
         }
 
@@ -173,13 +173,13 @@ override func didReceiveMemoryWarning() {
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     super.prepare(for: segue, sender: sender)
     
-    let settingsVC = segue.destination as! SettingsVC
-    settingsVC.delegate = self
-    settingsVC.red = red
-    settingsVC.green = green
-    settingsVC.blue = blue
-    settingsVC.brushSize = brushSize
-    settingsVC.opacityValue = opacityValue
+    let settingsViewController = segue.destination as! settingsViewController
+    settingsViewController.delegate = self
+    settingsViewController.red = red
+    settingsViewController.green = green
+    settingsViewController.blue = blue
+    settingsViewController.brushSize = brushSize
+    settingsViewController.opacityValue = opacityValue
 
         }
     }

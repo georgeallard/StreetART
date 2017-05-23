@@ -561,7 +561,7 @@
                                     <navigationItem title="Draw" id="Kbv-XR-ZK6">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="Ijc-jb-XMm">
                                             <connections>
-                                                <segue destination="OQ7-Eh-Olp" kind="show" id="nxQ-XT-MkP"/>
+                                                <segue destination="OQ7-Eh-Olp" kind="show" id="oSJ-96-q4b"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -1226,7 +1226,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="s40-Nr-dva"/>
+        <segue reference="oSJ-96-q4b"/>
         <segue reference="Nhk-54-UVl"/>
-        <segue reference="nxQ-XT-MkP"/>
     </inferredMetricsTieBreakers>
 </document>
