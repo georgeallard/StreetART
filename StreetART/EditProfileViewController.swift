@@ -144,7 +144,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
                 
                 self.fullName.text = values?["full name"] as? String
                 
-                self.about.text = values?[""] as? String
+                self.about.text = values?["about"] as? String
         
         
             })

@@ -26,7 +26,12 @@ class LoginViewController: UIViewController {
 
     }
     
-    
+   // func dismissKeyboard(_ emailField: UITextField) -> Bool {
+        
+     //   emailField.resignFirstResponder()
+       // return true
+        
+    //}
 
     
     @IBAction func LoginPressed(_ sender: Any) {
@@ -43,11 +48,11 @@ class LoginViewController: UIViewController {
             
             if user != nil {
                 
+                self.performSegue(withIdentifier: "TabBar", sender: nil)
                 
+        //        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserVC")
                 
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UserVC")
-                
-                self.present(vc, animated: true, completion: nil)
+              //  self.present(vc, animated: true, completion: nil)
             }
         })
         
