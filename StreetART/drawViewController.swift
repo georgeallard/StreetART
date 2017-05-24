@@ -52,6 +52,7 @@ class drawViewController: UIViewController {
     
     func drawLines(fromPoint:CGPoint,toPoint:CGPoint) {
         UIGraphicsBeginImageContext(self.view.frame.size)
+     
         imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         let context = UIGraphicsGetCurrentContext()
         
@@ -93,6 +94,7 @@ class drawViewController: UIViewController {
 
     }
     
+
     
     @IBAction func save(_ sender: Any) {
         let actionSheet = UIAlertController(title: "Pick your option", message: "", preferredStyle: .actionSheet)

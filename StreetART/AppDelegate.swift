@@ -45,13 +45,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             container.removeFromSuperview()
         }
     }
+    
+    
 
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-       // UINavigationBar.appearance().barTintColor = UIColor.gray
-        
-     
+      // UITabBarController.appearance().barTintColor = UIColor.gray
         
         
         // Override point for customization after application launch.

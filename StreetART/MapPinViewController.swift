@@ -31,6 +31,7 @@ class MapPinViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         
         let someCoordinate = CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0)
         
+        
         let annotation = MKPointAnnotation()
         annotation.coordinate = someCoordinate
         mapView.addAnnotation(annotation)
@@ -39,6 +40,8 @@ class MapPinViewController: UIViewController, MKMapViewDelegate, CLLocationManag
 }
     
     @IBAction func addArt_TouchUpInside(_ sender: Any) {
+        
+        
         
        
     }

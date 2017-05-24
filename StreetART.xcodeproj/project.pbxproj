@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C82D16321ED5C57F00BA2D76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82D16311ED5C57F00BA2D76 /* Images.xcassets */; };
 		C84103E71EC0925D00138044 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C84103E61EC0925D00138044 /* GoogleService-Info.plist */; };
 		C84103E91EC0A51500138044 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84103E81EC0A51500138044 /* UserCell.swift */; };
 		C84103EB1EC0A63300138044 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84103EA1EC0A63300138044 /* UsersViewController.swift */; };
@@ -24,13 +25,13 @@
 		C8D260821EBFD06D0091851A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D260811EBFD06D0091851A /* SignUpViewController.swift */; };
 		C8EE0B6C1EB8AAF000E7575B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8EE0B6B1EB8AAF000E7575B /* AppDelegate.swift */; };
 		C8EE0B711EB8AAF000E7575B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EE0B6F1EB8AAF000E7575B /* Main.storyboard */; };
-		C8EE0B731EB8AAF000E7575B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8EE0B721EB8AAF000E7575B /* Assets.xcassets */; };
 		C8EE0B761EB8AAF000E7575B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8EE0B741EB8AAF000E7575B /* LaunchScreen.storyboard */; };
 		FCF36A79C941077C521DDD0F /* Pods_StreetART.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0355D0F90A583574C8BBF6 /* Pods_StreetART.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0F0355D0F90A583574C8BBF6 /* Pods_StreetART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreetART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C82D16311ED5C57F00BA2D76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C84103E61EC0925D00138044 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C84103E81EC0A51500138044 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		C84103EA1EC0A63300138044 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		C8EE0B681EB8AAF000E7575B /* StreetART.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetART.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EE0B6B1EB8AAF000E7575B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8EE0B701EB8AAF000E7575B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C8EE0B721EB8AAF000E7575B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8EE0B751EB8AAF000E7575B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8EE0B771EB8AAF000E7575B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3E5F0E9977C222B372CC950 /* Pods-StreetART.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreetART.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreetART/Pods-StreetART.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 				C8EE0B6B1EB8AAF000E7575B /* AppDelegate.swift */,
 				C8EE0B6F1EB8AAF000E7575B /* Main.storyboard */,
 				C8EE0B741EB8AAF000E7575B /* LaunchScreen.storyboard */,
-				C8EE0B721EB8AAF000E7575B /* Assets.xcassets */,
+				C82D16311ED5C57F00BA2D76 /* Images.xcassets */,
 				C84103E61EC0925D00138044 /* GoogleService-Info.plist */,
 				C8EE0B771EB8AAF000E7575B /* Info.plist */,
 			);
@@ -242,8 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C84103E71EC0925D00138044 /* GoogleService-Info.plist in Resources */,
+				C82D16321ED5C57F00BA2D76 /* Images.xcassets in Resources */,
 				C8EE0B761EB8AAF000E7575B /* LaunchScreen.storyboard in Resources */,
-				C8EE0B731EB8AAF000E7575B /* Assets.xcassets in Resources */,
 				C8EE0B711EB8AAF000E7575B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
