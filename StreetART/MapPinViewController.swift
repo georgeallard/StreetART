@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import Firebase
 
 
 class MapPinViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
@@ -16,10 +17,9 @@ class MapPinViewController: UIViewController, MKMapViewDelegate, CLLocationManag
     @IBOutlet weak var addArt: UIBarButtonItem!
     @IBOutlet weak var mapView: MKMapView!
     
-    //var #imageLiteral(resourceName: "MapAnnotation") = MKPointAnnotation()
+    //var #imageLiteral(resourceName: "MapAnnotation") = MKPointAnnotation(
     
-    
-    let locationManager = CLLocationManager()
+      let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +31,9 @@ class MapPinViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         locationManager.startUpdatingLocation()
         mapView.userTrackingMode = .follow
 }
+
+        
+    
     
     @IBAction func addArt_TouchUpInside(_ sender: Any) {
         

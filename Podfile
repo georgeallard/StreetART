@@ -13,6 +13,7 @@ pod 'Firebase/Database’
 pod 'Firebase/Storage’
 pod 'SDWebImage', '~>3.8'
 pod 'TextFieldEffects'
+pod 'SDWebImage/WebP'
 
 
 

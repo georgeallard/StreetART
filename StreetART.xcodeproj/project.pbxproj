@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C82D16321ED5C57F00BA2D76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C82D16311ED5C57F00BA2D76 /* Images.xcassets */; };
+		C83A31941ED6E804006A729A /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A31931ED6E804006A729A /* MapPin.swift */; };
+		C83A31961ED6F368006A729A /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A31951ED6F368006A729A /* imageCollectionViewCell.swift */; };
+		C83A31981ED70C87006A729A /* CustomImageFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A31971ED70C87006A729A /* CustomImageFlowLayout.swift */; };
+		C83A319A1ED7119B006A729A /* UserImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C83A31991ED7119B006A729A /* UserImage.swift */; };
 		C84103E71EC0925D00138044 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C84103E61EC0925D00138044 /* GoogleService-Info.plist */; };
 		C84103E91EC0A51500138044 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84103E81EC0A51500138044 /* UserCell.swift */; };
 		C84103EB1EC0A63300138044 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C84103EA1EC0A63300138044 /* UsersViewController.swift */; };
@@ -32,6 +36,10 @@
 /* Begin PBXFileReference section */
 		0F0355D0F90A583574C8BBF6 /* Pods_StreetART.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreetART.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82D16311ED5C57F00BA2D76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C83A31931ED6E804006A729A /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		C83A31951ED6F368006A729A /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageCollectionViewCell.swift; sourceTree = "<group>"; };
+		C83A31971ED70C87006A729A /* CustomImageFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageFlowLayout.swift; sourceTree = "<group>"; };
+		C83A31991ED7119B006A729A /* UserImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserImage.swift; sourceTree = "<group>"; };
 		C84103E61EC0925D00138044 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C84103E81EC0A51500138044 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		C84103EA1EC0A63300138044 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				C8A40E3D1EC9D6960004242B /* MapPinViewController.swift */,
+				C83A31931ED6E804006A729A /* MapPin.swift */,
 			);
 			name = "Map Tag";
 			sourceTree = "<group>";
@@ -116,6 +125,9 @@
 			children = (
 				C881B4941ECB14AE00877E9C /* ProfileViewController.swift */,
 				C881B4961ECB39FC00877E9C /* EditProfileViewController.swift */,
+				C83A31991ED7119B006A729A /* UserImage.swift */,
+				C83A31951ED6F368006A729A /* imageCollectionViewCell.swift */,
+				C83A31971ED70C87006A729A /* CustomImageFlowLayout.swift */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -303,18 +315,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83A31981ED70C87006A729A /* CustomImageFlowLayout.swift in Sources */,
 				C881B4971ECB39FC00877E9C /* EditProfileViewController.swift in Sources */,
 				C84103E91EC0A51500138044 /* UserCell.swift in Sources */,
 				C8534F2A1EC5F008001C024A /* UploadViewController.swift in Sources */,
 				C854B5D91EC60389009DB1F1 /* FeedViewController.swift in Sources */,
 				C88E9FDF1EC0827F00799228 /* LoginViewController.swift in Sources */,
 				C8911BBA1ED48DA5009E9624 /* settingsViewController.swift in Sources */,
+				C83A319A1ED7119B006A729A /* UserImage.swift in Sources */,
 				C84103F01EC0ACA500138044 /* User.swift in Sources */,
+				C83A31961ED6F368006A729A /* imageCollectionViewCell.swift in Sources */,
 				C8911BB71ED46658009E9624 /* drawViewController.swift in Sources */,
 				C84103EB1EC0A63300138044 /* UsersViewController.swift in Sources */,
 				C881B4951ECB14AE00877E9C /* ProfileViewController.swift in Sources */,
 				C8D260821EBFD06D0091851A /* SignUpViewController.swift in Sources */,
 				C8A40E3E1EC9D6960004242B /* MapPinViewController.swift in Sources */,
+				C83A31941ED6E804006A729A /* MapPin.swift in Sources */,
 				C854B5D71EC60326009DB1F1 /* Post.swift in Sources */,
 				C8EE0B6C1EB8AAF000E7575B /* AppDelegate.swift in Sources */,
 				C854B5D51EC60171009DB1F1 /* PostCell.swift in Sources */,
